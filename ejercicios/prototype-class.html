@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+</head>
+<body>
+    <script>
+    //     const Persona = function(nombre){
+    //         this.nombre = nombre;
+    //     }
+
+    // //__proto__
+    // Persona.prototype.decirNombre = function(){
+    //     console.log()
+    // }
+
+    // const persona1 = new Persona('Lincy');
+    // persona1.decirNombre();
+
+    // const persona2 = new Persona('Lucía');
+    // persona2.decirNombre();
+
+    class Persona {
+        constructor(nombre) {
+            this.nombre = nombre;
+        }
+        decirNombre() {
+            console.log('Mi nombre es:', this.nombre);
+        }
+    }
+
+    const persona1 = new Persona('Lincy');
+    persona1.decirNombre();
+
+    const persona2 = new Persona('Lucía');
+    persona2.decirNombre();
+
+    </script>
+</body>
+</html>
